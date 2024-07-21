@@ -475,7 +475,7 @@ import plotly.express as px
 
 # Initialize the Dash app
 app = dash.Dash(__name__,suppress_callback_exceptions=True)
-
+server=app.server
 # Convert image to base64 string
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
