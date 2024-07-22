@@ -25,7 +25,7 @@ down_pay_df=pd.read_csv("Assests\\real_estate_csv\\real_down_pay.csv")
 
 
 
-# the functions we use with the main page 
+# the functions we use with the sell page 
 property_types_drop = ["Apartment", "Chalet", "Duplex", "Penthouse", "Townhouse", "Twin House", "Villa", "iVilla","All"]
 drop_list_regions=combined_df['Region'].value_counts()
 drop_box_values=drop_list_regions[~(drop_list_regions <= 10)].index
@@ -297,6 +297,8 @@ def median_months(comb_df,comb_df_r,region,prop_t):
     return round((price_of_buy_m / price_of_rent_m) / 12,2)
 
 
+
+#the functions we will use with the Rent page
 drop_list_regions=combined_df_r['Region'].value_counts()
 drop_box_values_rent=drop_list_regions[~(drop_list_regions <= 10)].index
 def scatter_fig_rent(df,region=None,prop_t=None):
