@@ -2,12 +2,12 @@
 <img src="https://github.com/user-attachments/assets/5f8f373f-5c50-4ed4-9c82-f06f24901341" alt="mylogo3" width="100" height="100">
 
 
-# Steps We Took to Build the Site
+# Steps We Took to Build the Site:
 
-## Data Collection and Web Scraping
+### Data Collection and Web Scraping
 We built this site by collecting data from the Property Finder website using web scraping with the Beautiful Soup library.
 
-## Data Processing
+### Data Processing
 - **Hidden Details Extraction**: 
   - Some listings do not advertise the down payment directly but mention it in the description.
   - Similarly, the number of years for installments might only be in the description.
@@ -15,7 +15,7 @@ We built this site by collecting data from the Property Finder website using web
 - **Regular Expressions**: 
   - We used regular expressions (regex) to find and extract these details accurately.
 
-## Data Analysis and Visualization
+### Data Analysis and Visualization
 - **Data Analysis**: 
   - We analyzed the cleaned and processed data to understand key insights and trends.
 - **Best Visualization Selection**: 
